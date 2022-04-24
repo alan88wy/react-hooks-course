@@ -4,6 +4,8 @@ function LayoutEffectTutorial() {
   const inputRef = useRef(null);
 
   // use LayoutEffect is runs first before useEffect
+  // eg use this to change layout before it is being populated for display
+  
   
   useLayoutEffect(() => {
     console.log(inputRef.current.value);
