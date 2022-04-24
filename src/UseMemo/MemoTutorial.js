@@ -29,6 +29,11 @@ export default function MemoTutorial() {
     return longestName;
   };
 
+  // Only run when toggle changed
+  // if instead of toggle, we put data, it will only runs when data change.
+  // const getLongestName = useMemo(() => findLongestName(data), [data]);
+// /
+
   const getLongestName = useMemo(() => findLongestName(data), [toggle]);
 
   return (

@@ -6,6 +6,7 @@ function Login() {
 
   return (
     <div>
+      <p>Login</p>
       <input
         onChange={(event) => {
           setUsername(event.target.value);
